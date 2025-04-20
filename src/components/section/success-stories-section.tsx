@@ -9,10 +9,25 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { scaleUp, staggerContainer } from "@/lib/animations";
 
 export default function SuccessStoriesSection() {
+  const successStories = [
+    {
+      id: 1,
+      img: "https://ik.imagekit.io/monzilkit/a53f2601-69f3-4b8d-be34-a416e51adda6-r0oetcwwoki9xfkebhqhjjtkxsi8rt227k219by0zs.png?updatedAt=1745127037696",
+    },
+    {
+      id: 2,
+      img: "https://ik.imagekit.io/monzilkit/e815ce96-b557-489b-9a54-315f7e13ff1c-r0oetcwwoki9xfkebhqhjjtkxsi8rt227k219by0zs.jpg?updatedAt=1745127037468",
+    },
+    {
+      id: 3,
+      img: "https://ik.imagekit.io/monzilkit/f3da3482-f1d9-45da-a1c1-7a1d13f17332-r0oetcwwoki9xfkebhqhjjtkxsi8rt227k219by0zs.jpg?updatedAt=1745127037381",
+    },
+  ];
+
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-950 to-zinc-900"></div>
-      <div className="container relative mx-auto">
+      <div className="container relative mx-auto px-10">
         <SectionHeading
           badge="Success Stories"
           title="Meet Our Successful Entrepreneurs"
@@ -26,17 +41,19 @@ export default function SuccessStoriesSection() {
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
-          {[1, 2, 3].map((item) => (
-            <motion.div key={item} variants={scaleUp}>
+          {successStories.map((item) => (
+            <motion.div key={item.id} variants={scaleUp}>
               <div className="group relative overflow-hidden rounded-2xl border border-zinc-800/50 bg-gradient-to-b from-zinc-900 to-zinc-950 h-full transition-all duration-300 hover:border-green-500/50 hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]">
-                <div className="relative h-80">
-                  <Image
-                    src={`/placeholder.svg?height=400&width=300&text=Success Story ${item}`}
-                    alt={`Success story ${item}`}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-transparent"></div>
+                <div className="relative h-[500px]">
+                  <div className="overflow-hidden">
+                    <Image
+                      src={item.img}
+                      alt={`Success story ${item}`}
+                      fill
+                      className="object-cover transition-transform duration-700 "
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
 
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <Badge className="bg-green-500/20 text-green-400 border-green-500/30 mb-3">

@@ -58,13 +58,12 @@ export default function HeroSection() {
 
           <motion.div className="relative" variants={scaleUp}>
             <div className="relative z-10 rounded-2xl overflow-hidden border border-zinc-800/50 shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-emerald-500/10"></div>
               <Image
-                src="/placeholder.svg?height=800&width=800"
+                src="https://ik.imagekit.io/monzilkit/LastIMG-1024x968.png?updatedAt=1745126993223"
                 alt="Entrepreneur success"
                 width={800}
                 height={800}
-                className="object-cover w-full aspect-square md:aspect-[4/3]"
+                className="object-cover w-full"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
 

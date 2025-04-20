@@ -9,6 +9,25 @@ import { ArrowRight, Star } from "lucide-react";
 import { fadeIn, scaleUp, staggerContainer } from "@/lib/animations";
 
 export default function ProductsShowcaseSection() {
+  const product = [
+    {
+      id: 1,
+      img: "https://ik.imagekit.io/monzilkit/2.png?updatedAt=1745127038068",
+    },
+    {
+      id: 2,
+      img: "https://ik.imagekit.io/monzilkit/5.png?updatedAt=1745127037633",
+    },
+    {
+      id: 3,
+      img: "https://ik.imagekit.io/monzilkit/8.png?updatedAt=1745127037433",
+    },
+    {
+      id: 4,
+      img: "https://ik.imagekit.io/monzilkit/2.png?updatedAt=1745127038068",
+    },
+  ];
+
   return (
     <section id="products" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-950 to-zinc-900"></div>
@@ -62,12 +81,12 @@ export default function ProductsShowcaseSection() {
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
-          {[1, 2, 3, 4].map((item) => (
-            <motion.div key={item} variants={scaleUp}>
+          {product.map((item) => (
+            <motion.div key={item.id} variants={scaleUp}>
               <div className="group relative overflow-hidden rounded-2xl backdrop-blur-md bg-zinc-900/40 border border-zinc-800/50 transition-all duration-300 hover:border-green-500/50 hover:shadow-[0_0_30px_rgba(34,197,94,0.15)]">
                 <div className="relative h-80 overflow-hidden">
                   <Image
-                    src={`/placeholder.svg?height=400&width=300&text=Product ${item}`}
+                    src={item.img}
                     alt={`Product ${item}`}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"

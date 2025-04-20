@@ -61,7 +61,7 @@ export default function CtaSection() {
               <div className="absolute -inset-2 rounded-2xl border border-green-500/40 z-0"></div>
               <div className="relative z-10 rounded-xl overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=800&width=800&text=Start Your Journey"
+                  src="https://ik.imagekit.io/monzilkit/LastIMG-1024x968.png?updatedAt=1745126993223"
                   alt="Start your journey"
                   width={500}
                   height={500}
