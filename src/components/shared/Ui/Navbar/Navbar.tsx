@@ -24,7 +24,7 @@ export default function Navbar({
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <Logo />
           <nav className="hidden md:flex gap-8">
@@ -52,14 +52,16 @@ export default function Navbar({
               Get Started
             </Button>
           </div>
-          {isMobile && (
-            <button
-              className="text-zinc-300 hover:text-white"
-              onClick={onMenuOpen}
-            >
-              <Menu className="h-6 w-6" />
-            </button>
-          )}
+          <div>
+            {isMobile && (
+              <button
+                className="text-zinc-300 hover:text-white"
+                onClick={onMenuOpen}
+              >
+                <Menu className="h-6 w-6" />
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </header>

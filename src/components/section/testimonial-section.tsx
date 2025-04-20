@@ -13,7 +13,7 @@ export default function TestimonialsSection() {
       {/* Animated gradient orb */}
       <div className="absolute top-1/3 right-1/3 w-[400px] h-[400px] rounded-full bg-green-500/10 blur-[100px] animate-pulse"></div>
 
-      <div className="container relative mx-auto">
+      <div className="container relative mx-auto px-4">
         <SectionHeading
           badge="Testimonials"
           title="Our Customer Reviews"

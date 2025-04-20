@@ -13,7 +13,7 @@ export default function HowItWorksSection() {
       {/* Animated gradient orb */}
       <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] rounded-full bg-green-500/10 blur-[100px] animate-pulse"></div>
 
-      <div className="container relative mx-auto">
+      <div className="container relative mx-auto px-4">
         <SectionHeading
           badge="Process"
           title="How Does R Slash Work?"

@@ -15,7 +15,7 @@ export default function MembershipPlansSection() {
       {/* Animated gradient orb */}
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-green-500/10 blur-[120px] animate-pulse"></div>
 
-      <div className="container relative mx-auto">
+      <div className="container relative mx-auto px-4">
         <SectionHeading
           badge="Pricing"
           title="Our Membership Plans"

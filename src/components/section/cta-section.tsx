@@ -19,7 +19,7 @@ export default function CtaSection() {
         style={{ animationDelay: "1s" }}
       ></div>
 
-      <div className="container relative mx-auto">
+      <div className="container relative mx-auto px-4">
         <motion.div
           className="max-w-5xl mx-auto backdrop-blur-md bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-12 md:p-16"
           initial="hidden"

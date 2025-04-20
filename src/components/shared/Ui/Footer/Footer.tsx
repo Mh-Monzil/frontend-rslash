@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-zinc-950 border-t border-zinc-800/50 py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950 to-zinc-900/50"></div>
-      <div className="container relative mx-auto">
+      <div className="container relative mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="mb-6">

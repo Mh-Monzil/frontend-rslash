@@ -31,7 +31,7 @@ export default function ProductsShowcaseSection() {
   return (
     <section id="products" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-950 to-zinc-900"></div>
-      <div className="container relative mx-auto">
+      <div className="container relative mx-auto px-4">
         <motion.div
           className="flex flex-col md:flex-row justify-between items-center mb-16 mx-auto"
           initial="hidden"

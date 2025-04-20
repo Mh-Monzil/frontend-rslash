@@ -9,7 +9,7 @@ import { fadeIn, scaleUp, staggerContainer } from "@/lib/animations";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden max-w-7xl mx-auto">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden max-w-7xl mx-auto px-4">
       {/* Animated gradient orbs */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-green-500/20 blur-[100px] animate-pulse"></div>
       <div
@@ -68,7 +68,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
 
               {/* Floating stats cards */}
-              <div className="absolute bottom-8 left-8 right-8 flex flex-wrap gap-4">
+              <div className="absolute left-4 bottom-4 right-4 md:bottom-8 md:left-8 md:right-8 flex flex-wrap gap-4">
                 <div className="backdrop-blur-md bg-zinc-900/40 border border-zinc-800/50 rounded-xl p-4 flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-green-500/20 flex items-center justify-center">
                     <Users className="h-5 w-5 text-green-400" />

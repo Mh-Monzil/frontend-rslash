@@ -13,7 +13,7 @@ interface MobileMenuProps {
 export default function MobileMenu({ onClose }: MobileMenuProps) {
   return (
     <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex flex-col">
-      <div className="container flex justify-between items-center h-20">
+      <div className="container flex justify-between items-center h-20 ">
         <Logo />
         <div className="flex items-center gap-4">
           {/* <ThemeToggle /> */}
