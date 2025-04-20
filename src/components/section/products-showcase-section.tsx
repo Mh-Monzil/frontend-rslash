@@ -94,7 +94,7 @@ export default function ProductsShowcaseSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                   <div className="absolute top-4 right-4">
-                    <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
+                    <Badge className="bg-green-400 text-black border-green-500/30">
                       Best Seller
                     </Badge>
                   </div>
