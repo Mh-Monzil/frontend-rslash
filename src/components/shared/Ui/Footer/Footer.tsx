@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
             <p className="text-zinc-400 mb-6">
               Empowering entrepreneurs to build successful online businesses in
-              the digital economy.
+              the digital economy .
             </p>
             <SocialLinks />
           </div>
